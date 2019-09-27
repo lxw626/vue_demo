@@ -33,7 +33,9 @@
     },
     methods:{
       deleteAllComplete(){
-        this.deleteCompleteTodos()
+        if(window.confirm('确认清除已完成的吗???')){
+          this.deleteCompleteTodos()
+        }
       }
     }
 
